@@ -21,9 +21,15 @@ The **Smart Doorbell** upgrades a traditional doorbell with features like facial
 - **Button**: Triggers photo capture.
 - **Indicator Light**: Confirms button press and image capture.
 
+
+
 ### **Software**:
 - **Backend**: 
   - **Python**, **Flask**, and **DeepFace** for API and facial recognition.
   - **AWS S3** for image storage.
 - **Frontend**:
   - **React** for user management and notifications.
+
+### **Important Note**:
+If you are using this project, replace all instances of `XXX` in the code with your own personal tokens, API keys, and credentials (e.g., AWS access keys, Telegram bot tokens). These placeholders are necessary for the project to function and must be configured with your specific details.
+
