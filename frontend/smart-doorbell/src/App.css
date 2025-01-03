@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap');
+
+*{
+  align-items: center; /* Aligns checkbox and text on the same line */
+  font-family: "Poppins", sans-serif;
+
+}
+
+.welcome-page{
+  background-image: url(./components/assets/welcomebackground.jpg);
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh;
+  display: flex;
+  image-rendering: auto;
+  justify-content:flex-end;
+  padding-right: 200px; /* Adds space from the right edge */
+  box-sizing: border-box;
+}
+
+.welcome-container {
+  text-align: center;
+  margin-top: 50px;
+  color: #ffffff;
+  max-width: 400px;
+  font-family: "Poppins", sans-serif;
+
+
+}
+
+.welcome-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.welcome-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.welcome-container button:hover {
+  background-color: #a0a2a4;
+}
+
+.get-started {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 40px;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.login-page {
+  background-image: url(./components/assets/loginbackground.jpg);
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures the background covers the entire page */
+  align-items: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Horizontally center */
+  flex-direction: column; /* Ensures the content stays vertical */
+
+}
+.login-container {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: left;
+  padding: 30px;
+  border: 2px solid rgba(255,255, 255, .2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0,0,0, .2);
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; /* Ensure padding does not shrink the container */
+
+
+}
+
+.login-container h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+.form-group {
+  position:relative;
+  margin: 40px 0;
+  width: 100%;
+  height: 20px;
+
+}
+
+.form-group input {
+width: 100%;
+height: 40px;
+background: transparent;
+border: 2px solid rgba(255,255, 255, .2);
+outline: none;
+border-radius: 40px;
+box-sizing: border-box;
+font-size: 16px;
+color: #ffffff;
+font-family: "Poppins", sans-serif;
+padding: 20px 45px 20px 20px;
+}
+
+.form-group input::placeholder {
+color: #ffffff;
+}
+
+.form-group .icon {
+  position: absolute;
+  right: 20px;
+  top: 75%;
+  font-size: 16px;
+}
+
+.login-container .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: 5px;
+  padding: -15px 0 15px;
+
+}
+
+.login-container .remember-forgot label {
+  display: flex;
+  align-items: center; /* Ensures checkbox and text are aligned */
+  gap: 5px; /* Adds a small gap between checkbox and text */
+  white-space: nowrap; /* Prevents "Remember me" from breaking into two lines */
+
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 4px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.login-container button{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  box-sizing: border-box;
+
+}
+
+.login-container .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover{
+  text-decoration: underline;
+}
+
+.register-page{
+  background-image: url(./components/assets/loginbackground.jpg);
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures the background covers the entire page */
+  align-items: center;
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Horizontally center */
+  flex-direction: column; /* Ensures the content stays vertical */
+}
+
+.register-container{
+  max-width: 420px;
+  max-height: 700px;
+  width: 100%;
+  /*margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;*/
+  text-align: left;
+  padding: 20px;
+  /*padding: 30px;*/
+  border: 2px solid rgba(255,255, 255, .2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0,0,0, .2);
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; /* Ensure padding does not shrink the container */
+}
+
+.register-container h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+.form-box input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: 2px solid rgba(255,255, 255, .2);
+  outline: none;
+  border-radius: 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 45px 20px 20px;
+  }
+  
+  .form-box input::placeholder {
+  color: #ffffff;
+  }
+
+  .register-container .remember-forgot-register label {
+    display: flex;
+    align-items: center; /* Ensures checkbox and text are aligned */
+    gap: 5px; /* Adds a small gap between checkbox and text */
+    white-space: nowrap; /* Prevents "Remember me" from breaking into two lines */
+    font-size: 14px;
+  }
+ 
+  .register-container .remember-forgot-register input {
+    width:auto;
+  }
+  
+  .login-link p{
+    font-size: 14px;
+    text-align: center;
+
+
+  }
+  .login-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+
+  }
+  
+  .login-link p a:hover{
+    text-decoration: underline;
+  }
+
+  .register-container button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    box-sizing: border-box;
+  
+  }
+
+  .welcome-back{
+  background-image: url(./components/assets/loginbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff; /* Adjust to match your theme's text color */
+  text-align: center;
+}
+
+.welcome-back h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Customize if needed */
+}
+
+.welcome-back p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.actions button {
+  background-color: #ffffff; /* Adjust to your theme color */
+  color: black;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+
+.actions button:hover {
+  background-color: #ffffff; /* Darker shade for hover */
+}
+
+.telegram-updates {
+  margin-top: 2rem;
+  max-width: 600px;
+}
+
+.telegram-updates p {
+  margin-bottom: 1rem;
+}
+
+
+.input-box {
+  position: relative;
+  display: flex; /* Aligns icon and input field in the same line */
+  align-items: center; /* Vertically centers icon with input field */
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1; /* Makes input take up available space */
+  height: 40px;
+  padding: 10px 20px 10px 40px; /* Adds padding to leave space for the icon */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-box .icon {
+  position: absolute;
+  left: 10px; /* Positions icon inside the left side of input */
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.family-member-upload-page {
+  background-image: url(./components/assets/loginbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.family-member-upload-container {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.family-member-upload-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.image-upload {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.image-upload input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.image-preview {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.remove-button {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #ff7875;
+}
+
+.upload-button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.upload-button:hover {
+  background-color: #a0a2a4;
+}
+
+
+.name-input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.name-input::placeholder {
+  color: #ffffff;
+}
